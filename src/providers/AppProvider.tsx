@@ -24,10 +24,14 @@ const defaultValue: Context = {
 };
 
 // cr8 context with using function createContext
-export const AppContext = createContext(undefined);
+export const AppContext = createContext(defaultValue);
 
 // cr8 AppProvider function
 
 const AppProvider = ({ children } : Props) => {
     const [user, setUser] = useState<User>();
+
+    
 };
+
+export default AppProvider;
