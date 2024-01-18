@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useState } from 'react';
+import React, { ReactNode, createContext, useState } from 'react';
 
 // interface User
 interface User {
@@ -9,6 +9,12 @@ interface User {
 // interface Props
 interface Props {
     children: ReactNode;
+}
+
+// interface Context
+interface Context {
+    user?: User;
+    setUser?: React.Dispatch<React.SetStateAction<User | undefined>>;
 }
 
 // cr8 context with using function createContext
