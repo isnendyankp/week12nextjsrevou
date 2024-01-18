@@ -19,4 +19,11 @@ const PostServer = ({ posts } : Props) => {
     );
 }
 
+// cr8 getServerSideProps
+export const getServerSideProps = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data: Post[] = await response.json();
+    
+}
+
 export default PostServer;
