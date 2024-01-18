@@ -1,5 +1,5 @@
 import { ReactNode, useMemo } from 'react';
-
+import style from './Card.module.css'
 
 interface Props {
     children: ReactNode;
