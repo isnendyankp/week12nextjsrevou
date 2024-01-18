@@ -1,3 +1,12 @@
+
+interface Post {
+    title: string;
+}
+
+interface Props {
+    posts: Post[];
+}
+
 const PostServer = () => {
     return (
         <div>
