@@ -1,6 +1,6 @@
 const ProductById = () => {
 
-    
+    const router = useRouter()
 
     return (
         <div>
