@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router'
+
 const ProductById = () => {
 
     const router = useRouter()
