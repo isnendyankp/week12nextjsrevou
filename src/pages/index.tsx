@@ -1,4 +1,6 @@
 export default function Home() {
+
+  const context = useContext(AppContext);
   return (
     <div>
       {' ini adalah halaman utama '}
