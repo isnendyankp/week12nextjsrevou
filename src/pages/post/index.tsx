@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 // interface
 interface Post{
     title: string;
@@ -5,7 +7,7 @@ interface Post{
 
 const Post = () => {
 
-    // cr8 state post
+    // cr8 useState post
     const [post, setPost] = useState<Post[]>([])
 
     return (
