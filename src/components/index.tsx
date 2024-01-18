@@ -20,8 +20,16 @@ const Card = ({ children, justifyContent = 'start'} : Props) => {
         }
 
         return style.justifyRight
-       }
-    );  
+       }, 
+       [justifyContent]
+    );
+    
+    // return the card component
+    return (
+        <div className={`${style.cardContainer} ${justifyContentStyled}`}>
+            {children}
+        </div>
+    )
 }
 
 export default Card;
