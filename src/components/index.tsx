@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useMemo } from 'react';
 
 
 interface Props {
@@ -8,6 +8,12 @@ interface Props {
 }
 
 const Card = ({ children, justifyContent = 'start'} : Props) => {
+
+    const justifyContentStyled = useMemo(
+       () => {
+        
+       }
+    );  
 }
 
 export default Card;
