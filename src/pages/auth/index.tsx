@@ -1,4 +1,8 @@
+import { useSearchParams } from "next/navigation";
+
 const AuthIndex = () => {
+
+    const searchParams = useSearchParams();
 
     return (
         <div>
