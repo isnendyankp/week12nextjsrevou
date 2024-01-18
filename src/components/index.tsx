@@ -51,7 +51,7 @@ const Card = ({ children, justifyContent = 'start, display = 'flex', direction =
     
     // return the card component
     return (
-        <div className={`${style.cardContainer} ${justifyContentStyled} ${displaStyled}`}>
+        <div className={`${style.cardContainer} ${justifyContentStyled} ${displaStyled} ${directionStyle}`}>
             {children}
         </div>
     )
