@@ -17,5 +17,5 @@ export const AppContext = createContext(undefined);
 // cr8 AppProvider function
 
 const AppProvider = ({ children } : Props) => {
-
+    const [user, setUser] = useState<User>();
 };
