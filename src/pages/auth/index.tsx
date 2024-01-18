@@ -10,6 +10,7 @@ const AuthIndex = () => {
 
     return (
         <div>
+            {/* url query string */}
             {/* kalo sign dan email ada, tampilkan halaman sign dan email, kalo tidak tampilkan halaman auth = ini adalah halaman auth */}
             {sign && email ? `ini adalah halaman sign ${sign} dan ${email}` : 'ini adalah halaman auth'}
         </div>
