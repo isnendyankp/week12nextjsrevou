@@ -8,7 +8,7 @@ interface Props {
     direction?: 'row' | 'column';
 }
 
-const Card = ({ children, justifyContent = 'start, display = 'flex'} : Props) => {
+const Card = ({ children, justifyContent = 'start, display = 'flex', direction = 'row'} : Props) => {
 
     // cr8 a style obj(justityContentStyled) to hold the styles for the card component
     const justifyContentStyled = useMemo(
