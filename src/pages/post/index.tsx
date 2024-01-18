@@ -27,7 +27,7 @@ const Post = () => {
     )
 
     return (
-        <Card>
+        <Card direction="column">
             {/* ini berguna untuk menampilkan data */}
             {' ini adalah halaman post dengan client side fetch '}
             {/* menggunakan map untuk menampilkan data client side fetch */}
