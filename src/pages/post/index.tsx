@@ -27,7 +27,7 @@ const Post = () => {
     )
 
     return (
-        <div>
+        <Card>
             {/* ini berguna untuk menampilkan data */}
             {' ini adalah halaman post dengan client side fetch '}
             {/* menggunakan map untuk menampilkan data client side fetch */}
@@ -35,7 +35,7 @@ const Post = () => {
                 <p key={index}>{post.title}</p>
             ))}
 
-        </div>
+        </Card>
     );
 }
 
