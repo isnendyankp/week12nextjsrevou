@@ -40,11 +40,9 @@ const Card = ({ children, justifyContent = 'start', display = 'flex', direction 
     const directionStyle = useMemo(
         () => {
             if (direction === 'row') {
-                return style.directionRow;
+                return style.flexDirectionRow;
             }
-            if (direction === 'column') {
-                return style.directionColumn;
-            }
+            return style.flexDirectionColumn;
         },
         [direction]
     );
