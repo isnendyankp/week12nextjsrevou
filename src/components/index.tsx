@@ -5,9 +5,10 @@ interface Props {
     children: ReactNode;
     justifyContent?: 'start' | 'center' | 'end';
     display?: 'flex' | 'block';
+    direction?: 'row' | 'column';
 }
 
-const Card = ({ children, justifyContent = 'start'} : Props) => {
+const Card = ({ children, justifyContent = 'start, display = 'flex'} : Props) => {
 
     // cr8 a style obj(justityContentStyled) to hold the styles for the card component
     const justifyContentStyled = useMemo(
