@@ -12,7 +12,7 @@ const PostServer = ({ posts } : Props) => {
         <div>
             {' ini adalah halaman post dengan server side fetch '}
             {/* menggunakan map untuk menampilkan data server side fetch */}
-            {posts.map((post, index) => (
+            {posts?.map((post, index) => (
                 <p key={index}>{post.title}</p>
             ))}
         </div>
@@ -24,6 +24,12 @@ export const getServerSideProps = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data: Post[] = await response.json();
     
+    // return data
+    return {
+      props: {
+        posts: data,
+      },
+    };
 }
 
 export default PostServer;
