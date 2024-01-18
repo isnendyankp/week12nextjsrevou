@@ -6,6 +6,8 @@ const AuthIndex = () => {
 
     const sign = searchParams.get('sign');
 
+    const email = searchParams.get('email');
+
     return (
         <div>
             {' ini adalah halaman auth '}
