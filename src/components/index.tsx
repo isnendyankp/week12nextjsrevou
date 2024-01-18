@@ -24,6 +24,17 @@ const Card = ({ children, justifyContent = 'start, display = 'flex'} : Props) =>
        }, 
        [justifyContent]
     );
+
+    // cr8 displayStyled for the card component
+    const displayStyled = useMemo(
+        () => {
+            if (display === 'flex') {
+                return style.displayFlex
+            }
+            return style.displayBlock
+        },
+        [display]
+    );
     
     // return the card component
     return (
