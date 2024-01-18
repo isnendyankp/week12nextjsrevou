@@ -16,6 +16,6 @@ export const AppContext = createContext(undefined);
 
 // cr8 AppProvider function
 
-const AppProvider = ({ children }) => {
+const AppProvider = ({ children } : Props) => {
 
 };
