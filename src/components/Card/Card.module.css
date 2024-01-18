@@ -26,3 +26,13 @@
 .displayBlock {
     display: block;
 }
+
+/* Flex direction */
+
+.flexDirectionRow {
+    flex-direction: row;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
