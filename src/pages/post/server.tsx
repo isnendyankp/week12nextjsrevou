@@ -7,7 +7,7 @@ interface Props {
     posts: Post[];
 }
 
-const PostServer = () => {
+const PostServer = ({ posts } : Props) => {
     return (
         <div>
             {' ini adalah halaman post dengan server side fetch '}
