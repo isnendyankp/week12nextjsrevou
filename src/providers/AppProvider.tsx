@@ -17,6 +17,12 @@ interface Context {
     setUser?: React.Dispatch<React.SetStateAction<User | undefined>>;
 }
 
+// cr8 defaultValue with using interface Context
+const defaultValue: Context = {
+    user: undefined,
+    setUser: undefined,
+};
+
 // cr8 context with using function createContext
 export const AppContext = createContext(undefined);
 
