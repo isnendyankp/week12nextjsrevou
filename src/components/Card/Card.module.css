@@ -4,6 +4,7 @@
     border: 1px solid #000;
 }
 
+/* Justify */
 .justifyCenter {
     justify-content: center;
 }
@@ -14,4 +15,14 @@
 
 .justifRight {
     justify-content: right;
+}
+
+/* display */
+
+.displayFlex {
+    display: flex;
+}
+
+.displayBlock {
+    display: block;
 }
