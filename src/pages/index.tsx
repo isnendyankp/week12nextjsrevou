@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { AppContext } from '../providers/AppProvider';
+
 export default function Home() {
 
   const context = useContext(AppContext);
