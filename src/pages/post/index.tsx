@@ -17,6 +17,14 @@ const Post = () => {
         setPost(data);
     }
 
+    // cr8 useEffect
+    useEffect(
+        () => {
+        fetchPosts();
+        },
+        []
+    )
+
     return (
         <div>
             {' ini adalah halaman post dengan client side fetch '}
