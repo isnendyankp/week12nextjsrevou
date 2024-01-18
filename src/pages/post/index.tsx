@@ -1,3 +1,7 @@
+interface Post{
+    title: string;
+}
+
 const Post = () => {
 
     return (
