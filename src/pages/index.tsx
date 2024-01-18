@@ -7,6 +7,8 @@ export default function Home() {
   return (
     <div>
       {' ini adalah halaman utama '}
+      {/* passin context user & name */}
+      {context.user?.name}
     </div>
   )
 }
