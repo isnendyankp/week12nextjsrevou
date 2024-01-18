@@ -3,3 +3,15 @@
     padding: 15px;
     border: 1px solid #000;
 }
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifLeft {
+    justify-content: start;
+}
+
+.justifRight {
+    justify-content: right;
+}
