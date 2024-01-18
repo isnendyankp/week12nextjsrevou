@@ -1,4 +1,4 @@
-import exp from "constants";
+
 
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
     display?: 'flex' | 'block';
 }
 
-const Card = () => {
+const Card = ({ children, justifyContent = 'start'} : Props) => {
 }
 
 export default Card;
