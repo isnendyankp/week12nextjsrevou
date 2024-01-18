@@ -35,10 +35,23 @@ const Card = ({ children, justifyContent = 'start, display = 'flex', direction =
         },
         [display]
     );
+
+    // Cr8 directionStyle
+    const directionStyle = useMemo(
+        () => {
+            if (direction === 'row') {
+                return style.directionRow
+            }
+            if (direction === 'column') {
+                return style.directionColumn
+            }
+        },
+        [direction]
+    );
     
     // return the card component
     return (
-        <div className={`${style.cardContainer} ${justifyContentStyled}`}>
+        <div className={`${style.cardContainer} ${justifyContentStyled} ${displaStyled}`}>
             {children}
         </div>
     )
