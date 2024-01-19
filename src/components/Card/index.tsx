@@ -14,9 +14,9 @@ const BaseCard = styled.div<Props>`
     flex-direction: ${(props) => props.direction};
 `;
 
-const Card = ({ children, display = 'flex', className } : Props) => {
+const Card = ({ children, display = 'flex', direction = 'row',  className } : Props) => {
     return (
-        <BaseCard display={display} className={className}>
+        <BaseCard display={display} className={className} direction={direction}>
             {children}
         </BaseCard>
     )
