@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CSS, CSSProp, CSSProperties } from "styled-components/dist/types";
+import { CSSProperties, ReactNode } from "react"
 
 interface Props {
     children: ReactNode;
@@ -7,7 +7,7 @@ interface Props {
     className?: string;
 }
 
-const Card = () => {
+const Card = ({ children, display, className } : Props) => {
     return (
 
     )
