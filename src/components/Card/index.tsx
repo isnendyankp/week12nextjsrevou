@@ -5,6 +5,7 @@ interface Props {
     children: ReactNode;
     display?: CSSProperties['display'];
     className?: string;
+    direction?: CSSProperties['flexDirection'];
 }
 
 // Basecard
