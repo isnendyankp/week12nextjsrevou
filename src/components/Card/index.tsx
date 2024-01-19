@@ -11,6 +11,7 @@ interface Props {
 // Basecard
 const BaseCard = styled.div<Props>`
     display: ${(props) => props.display};
+    flex-direction: ${(props) => props.direction};
 `;
 
 const Card = ({ children, display = 'flex', className } : Props) => {
