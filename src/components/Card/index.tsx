@@ -14,7 +14,9 @@ const BaseCard = styled.div`
 const Card = ({ children, display, className } : Props) => {
     return (
         <BaseCard>
-            
+            {children}
         </BaseCard>
     )
 };
+
+export default Card;
