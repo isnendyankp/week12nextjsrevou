@@ -3,7 +3,7 @@ import { CSSProperties, ReactNode } from "react"
 
 interface Props {
     children: ReactNode;
-    display: CSSProperties['display'];
+    display?: CSSProperties['display'];
     className?: string;
 }
 
