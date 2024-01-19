@@ -27,15 +27,21 @@ const Post = () => {
     )
 
     return (
-        <Card direction="column">
-            {/* ini berguna untuk menampilkan data */}
-            {' ini adalah halaman post dengan client side fetch '}
-            {/* menggunakan map untuk menampilkan data client side fetch */}
-            {posts.map((post, index) => (
-                <p key={index}>{post.title}</p>
-            ))}
+      <Card direction="column">
 
-        </Card>
+        {/* ini berguna untuk menampilkan data */}
+        <h1>{' ini adalah halaman post dengan client side fetch '}</h1>
+
+        {/* menggunakan map untuk menampilkan data client side fetch */}
+        {posts.map((post, index) => (
+            // add Card component to display the data from the API endpoint
+            <Card key={index} direction="row">
+                <p key={index}>
+                    {post.title}
+                </p>
+            </Card>
+        ))}
+      </Card>
     );
 }
 
