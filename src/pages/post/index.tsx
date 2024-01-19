@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { OldCard } from '@/components';
+import { Card } from '@/components';
 
 // interface
 interface Post{
@@ -27,7 +27,7 @@ const Post = () => {
     )
 
     return (
-      <OldCard direction="row">
+      <Card>
 
         {/* ini berguna untuk menampilkan data */}
         <h1>{' ini adalah halaman post dengan client side fetch '}</h1>
@@ -35,13 +35,13 @@ const Post = () => {
         {/* menggunakan map untuk menampilkan data client side fetch */}
         {posts.map((post, index) => (
             // add Card component to display the data from the API endpoint
-            <OldCard key={index} direction="row" justifyContent='center'>
+            // <OldCard key={index} direction="row" justifyContent='center'>
                 <p key={index}>
                     {post.title}
                 </p>
-            </OldCard>
+            // </OldCard>
         ))}
-      </OldCard>
+      </Card>
     );
 }
 
