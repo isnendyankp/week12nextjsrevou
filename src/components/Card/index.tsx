@@ -7,8 +7,14 @@ interface Props {
     className?: string;
 }
 
+const BaseCard = styled.div`
+
+`;
+
 const Card = ({ children, display, className } : Props) => {
     return (
-
+        <BaseCard>
+            
+        </BaseCard>
     )
 };
