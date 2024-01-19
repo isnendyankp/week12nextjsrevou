@@ -1,2 +1,2 @@
 // file distributor for components
-export { default as Card } from './Card';
+export { default as OldCard } from './OldCard';
