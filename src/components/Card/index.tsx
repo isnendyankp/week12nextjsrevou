@@ -13,7 +13,7 @@ interface Props {
 const BaseCard = styled.div<Props>`
   display: ${(props) => props.display} !important;
   flex-direction: ${(props) => props.direction} !important;
-    flex-wrap: ${(props) => props.wrap};
+  flex-wrap: ${(props) => props.wrap};
 `;
 
 const Card = ({ children, display = 'flex', direction = 'row',  className, wrap = 'wrap' } : Props) => {

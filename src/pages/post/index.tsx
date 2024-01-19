@@ -28,22 +28,16 @@ const Post = () => {
 
     return (
       <Card direction={'column'}>
-
-            {/* ini berguna untuk menampilkan data */}
             <h1>{' ini adalah halaman post dengan client side fetch '}</h1>
-
             <Card direction={'row'}>
-                {/* menggunakan map untuk menampilkan data client side fetch */}
                 {posts.map((post, index) => (
-                    // add Card component to display the data from the API endpoint
                     <Card key={index} className="text-center" direction={'row'}>
-                        <p >
+                        <p>
                             {post.title}
                         </p>
                     </Card>
                 ))}
             </Card>
-            
       </Card>
     );
 }
