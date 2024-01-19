@@ -21,3 +21,6 @@ This is a learn cr8 project nextjs from bootcamp revoU
 7. choose No for App.Router
 8. choose @ for import alias
 
+
+## install dependencies
+1. npm install styled-components for styling
