@@ -8,12 +8,12 @@ interface Props {
 }
 
 const BaseCard = styled.div<Props>`
-
+    display: ${(props) => props.display};
 `;
 
-const Card = ({ children, display, className } : Props) => {
+const Card = ({ children, display = 'flex', className } : Props) => {
     return (
-        <BaseCard>
+        <BaseCard display={display}>
             {children}
         </BaseCard>
     )
