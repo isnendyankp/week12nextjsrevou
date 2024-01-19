@@ -35,7 +35,7 @@ const Post = () => {
         {/* menggunakan map untuk menampilkan data client side fetch */}
         {posts.map((post, index) => (
             // add Card component to display the data from the API endpoint
-            <Card key={index} direction="row">
+            <Card key={index} direction="row" justifyContent='center'>
                 <p key={index}>
                     {post.title}
                 </p>
