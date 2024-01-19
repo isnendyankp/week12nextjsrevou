@@ -7,7 +7,7 @@ interface Props {
     className?: string;
 }
 
-const BaseCard = styled.div`
+const BaseCard = styled.div<Props>`
 
 `;
 
