@@ -1,6 +1,8 @@
 .cardContainer {
     padding: 15px;
     border: 1px solid #000;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 /* Justify */
