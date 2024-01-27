@@ -10,6 +10,14 @@ const Login = () => {
     password: string;
   }
 
+    // useFormik hook
+  const formMik = useFormik<FormProps>({
+    initialValues: {
+      email: '',
+      password: '',
+    },
+
+
   return <div>{' ini adalah halaman Login '}</div>;
 };
 
