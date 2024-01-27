@@ -1,6 +1,7 @@
-import { useRouter } from 'next/router';
+import { Input, Text, Button, Card } from '../../components';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import { useRouter } from 'next/router';
 
 const Login = () => {
   // use Navigate router hook
@@ -12,7 +13,7 @@ const Login = () => {
     password: string;
   }
 
-    // useFormik hook
+  // useFormik hook
   const formMik = useFormik<FormProps>({
     initialValues: {
       email: '',
@@ -67,8 +68,53 @@ const Login = () => {
     }),
   });
 
+  return (
+    <Card
+      border={false}
+      className="flex items-center justify-center min-h-screen bg-gray-200 "
+    >
+      <Card border className="p-10 bg-white shadow-lg rounded-lg">
+        <form onSubmit={formMik.handleSubmit} className="space-y-6">
+          <div className="space-y-2">
+            <Text className="font-bold text-lg">{'Email'}</Text>
+            <Input
+              className="block border-emerald-700 border w-full p-2 rounded-lg"
+              name={'email'}
+              value={formMik.values.email}
+              onChange={formMik.handleChange('email')}
+            />
+            {formMik.errors.email && <Text>{formMik.errors.email}</Text>}
+          </div>
 
-  return <div>{' ini adalah halaman Login '}</div>;
+          <div className="space-y-2">
+            <Text className="font-bold text-lg">{'Password'}</Text>
+            <Input
+              className="block border-emerald-700 border w-full p-2 rounded-lg"
+              name={'password'}
+              type={'password'}
+              value={formMik.values.password}
+              onChange={formMik.handleChange('password')}
+            />
+            {formMik.errors.password && <Text>{formMik.errors.password}</Text>}
+          </div>
+
+          <div className="flex justify-between items-center">
+            <Button
+              label={'Register'}
+              onClick={() => router.push('/')}
+              className={'bg-blue-500 mt-2 py-2 px-4 rounded-lg'}
+            />
+
+            <Button
+              label={'Login'}
+              type={'submit'}
+              className={'bg-green-500 py-2 px-4 rounded-lg'}
+            />
+          </div>
+        </form>
+      </Card>
+    </Card>
+  );
 };
 
 export default Login;
