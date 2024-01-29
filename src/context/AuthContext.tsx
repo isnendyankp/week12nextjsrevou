@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 interface AuthContextProps {
   isAuthenticated: boolean;
@@ -13,9 +13,7 @@ interface AuthProviderProps {
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
 
 const AuthContext = () => {
-  return (
-    <div>AuthContext</div>
-  )
-}
+  return <div>AuthContext</div>;
+};
 
-export default AuthContext
+export default AuthContext;
