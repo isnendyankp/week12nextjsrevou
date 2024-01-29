@@ -10,6 +10,8 @@ interface AuthProviderProps {
   children: React.ReactNode; // Tambahkan tipe untuk children
 }
 
+const AuthContext = createContext<AuthContextProps | undefined>(undefined);
+
 const AuthContext = () => {
   return (
     <div>AuthContext</div>
