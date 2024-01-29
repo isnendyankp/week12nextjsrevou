@@ -6,6 +6,10 @@ interface AuthContextProps {
   logout: () => void;
 }
 
+interface AuthProviderProps {
+  children: React.ReactNode; // Tambahkan tipe untuk children
+}
+
 const AuthContext = () => {
   return (
     <div>AuthContext</div>
