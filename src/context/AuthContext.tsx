@@ -12,8 +12,7 @@ interface AuthProviderProps {
 
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
 
-const AuthContext = () => {
-  return <div>AuthContext</div>;
-};
+export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
+    
+}
 
-export default AuthContext;
