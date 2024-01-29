@@ -23,5 +23,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         setIsAuthenticated(true);
       }
     }, []);
+
+    const login = (token: string) => {
+      localStorage.setItem('token', token);
+      setIsAuthenticated(true);
+    };
 }
 
