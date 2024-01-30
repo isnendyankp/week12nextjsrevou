@@ -1,27 +1,20 @@
-import styled from "styled-components";
-import { CSSProperties, ReactNode } from "react"
+import { ReactNode } from 'react';
 
-interface Props {
-    children: ReactNode;
-    display?: CSSProperties['display'];
-    className?: string;
-    direction?: CSSProperties['flexDirection'];
-    wrap?: CSSProperties['flexWrap'];
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  border: boolean;
+  children: ReactNode;
 }
 
-// Basecard
-const BaseCard = styled.div<Props>`
-  display: ${(props) => props.display} !important;
-  flex-direction: ${(props) => props.direction} !important;
-  flex-wrap: ${(props) => props.wrap};
-`;
-
-const Card = ({ children, display = 'flex', direction = 'row',  className, wrap = 'wrap' } : Props) => {
-    return (
-        <BaseCard display={display} className={className} direction={direction} wrap={wrap}>
-            {children}
-        </BaseCard>
-    )
+const Card = ({ border, children, ...props }: Props) => {
+  return (
+    <div
+      className={`${border && 'rounded border-slate-600 border'} p-8 ${
+        props.className
+      }`}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Card;
