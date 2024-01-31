@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PokemonListData } from '../../interfaces/Category';
+import { useRouter } from 'next/router';
 
 
 const PokemonListContainer: React.FC = () => {
