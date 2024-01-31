@@ -13,6 +13,12 @@ const PokemonListContainer: React.FC = () => {
   useEffect(() => {
     const fetchPokemon = async () => {
         try {
+          // fetch pokemon list from API
+          const response = await axios.get(
+            'https://pokeapi.co/api/v2/pokemon?limit=61'
+          );
+
+          
         } catch (error) {
           console.error('Error fetching Pokemon:', error);
         }
