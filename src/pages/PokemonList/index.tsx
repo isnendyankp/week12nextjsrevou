@@ -12,7 +12,10 @@ const PokemonListContainer: React.FC = () => {
   // useEffect hook
   useEffect(() => {
     const fetchPokemon = async () => {
-        
+        try {
+        } catch (error) {
+          console.error('Error fetching Pokemon:', error);
+        }
     };
   }, []);
 };
