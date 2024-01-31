@@ -10,7 +10,11 @@ const PokemonListContainer: React.FC = () => {
   const router = useRouter();
 
   // useEffect hook
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const fetchPokemon = async () => {
+        
+    };
+  }, []);
 };
 
 export default PokemonListContainer;
