@@ -9,6 +9,11 @@ const PokemonListContainer: React.FC = () => {
 
   // use Navigate router hook
   const router = useRouter();
+
+    // useEffect hook
+    useEffect(() => {
+        
+    }, []);
 }
 
 export default PokemonListContainer;
