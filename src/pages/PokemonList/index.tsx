@@ -48,6 +48,8 @@ const PokemonListContainer: React.FC = () => {
             });
           );
           
+          // set pokemon data
+          setPokemon(pokeData);
         } catch (error) {
           console.error('Error fetching Pokemon:', error);
         }
