@@ -21,8 +21,14 @@ const PokemonListContainer: React.FC = () => {
            // fetch pokemon data from API
           const pokeData: PokemonListData[] = await Promise.all(
             response.data.results.map(async (poke: { name: string }) => {
+              // fetch pokemon data from API
               const pokemonResponse = await axios.get(
               `https://pokeapi.co/api/v2/pokemon/${poke.name}`
+              );
+
+              // response.data.abilities is an array of objects
+              const abilities = pokemonResponse.data.abilities.map(
+                (ability: { ability: { name: string } }) => ability.ability.name
               );
             
             });
