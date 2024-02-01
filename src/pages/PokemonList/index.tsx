@@ -30,6 +30,11 @@ const PokemonListContainer: React.FC = () => {
               const abilities = pokemonResponse.data.abilities.map(
                 (ability: { ability: { name: string } }) => ability.ability.name
               );
+
+              // response.data.types is an array of objects
+              const types = pokemonResponse.data.types.map(
+                (type: { type: { name: string } }) => type.type.name
+              );
             
             });
           );
