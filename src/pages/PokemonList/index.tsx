@@ -17,7 +17,16 @@ const PokemonListContainer: React.FC = () => {
           const response = await axios.get(
             'https://pokeapi.co/api/v2/pokemon?limit=61'
           );
-
+          
+           // fetch pokemon data from API
+          const pokeData: PokemonListData[] = await Promise.all(
+            response.data.results.map(async (poke: { name: string }) => {
+              const pokemonResponse = await axios.get(
+              `https://pokeapi.co/api/v2/pokemon/${poke.name}`
+              );
+            
+            });
+          );
           
         } catch (error) {
           console.error('Error fetching Pokemon:', error);
