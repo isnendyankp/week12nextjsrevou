@@ -35,6 +35,15 @@ const PokemonListContainer: React.FC = () => {
               const types = pokemonResponse.data.types.map(
                 (type: { type: { name: string } }) => type.type.name
               );
+
+               // return pokemon data
+              return {
+                id: pokemonResponse.data.id,
+                name: poke.name,
+                sprite: pokemonResponse.data.sprites.front_default,
+                types,
+                abilities,
+              };
             
             });
           );
