@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PokemonListData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
+import axios from 'axios';
 
 const PokemonListContainer: React.FC = () => {
   // useState hook
