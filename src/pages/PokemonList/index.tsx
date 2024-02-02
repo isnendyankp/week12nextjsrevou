@@ -71,7 +71,24 @@ const PokemonListContainer: React.FC = () => {
       <Button
         onClick={() => router.push('/pokemon/search')}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
+      />
+      {/* pokemon list */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {pokemon.map((poke) => (
+          <div
+            key={poke.id}
+            className="flex flex-col items-center bg-blue-200 border-blue-500 border-solid border-2 p-2 my-2 rounded-md w-64"
+          >
+            <div className="mb-2">
+              <p className="text-lg font-semibold">{poke.name}</p>
+              <p>ID: {poke.id}</p>
+              <p>Types: {poke.types.join(', ')}</p>
+              <p>Abilities: {poke.abilities.join(', ')}</p>
+            </div>
+            <img src={poke.sprite} alt={poke.name} />
+          </div>
+        ))}
+      </div>
      </div>
   )
 };
