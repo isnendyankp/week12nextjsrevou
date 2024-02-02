@@ -89,6 +89,16 @@ const PokemonListContainer: React.FC = () => {
           </div>
         ))}
       </div>
+
+      {/* Back to Top */}
+      <Button
+        label="Back to Top"
+        onClick={scrollToTop}
+        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 sticky bottom-4"
+      >
+        Back to Top
+      </Button>
+      
      </div>
   )
 };
