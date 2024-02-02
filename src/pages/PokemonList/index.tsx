@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { PokemonListData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
 import axios from 'axios';
+import { Text, Button } from '../../components';
 
 const PokemonListContainer: React.FC = () => {
   // useState hook
@@ -66,6 +67,11 @@ const PokemonListContainer: React.FC = () => {
       <h1 className="text-4xl mb-4">
         <Text>Pokemon List</Text>
       </h1>
+      {/* button pokemon search */}
+      <Button
+        onClick={() => router.push('/pokemon/search')}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
      </div>
   )
 };
