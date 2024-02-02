@@ -62,7 +62,10 @@ const PokemonListContainer: React.FC = () => {
   // return pokemon list
   return (
      <div className="flex flex-col items-center justify-center bg-gray-100 min-h-screen px-6">
-     
+     {/* title pokemon list */}
+      <h1 className="text-4xl mb-4">
+        <Text>Pokemon List</Text>
+      </h1>
      </div>
   )
 };
