@@ -1,5 +1,6 @@
 import React,{ useState } from 'react'
 import { PokemonSearchData } from '../../interfaces/Category';
+import { useRouter } from 'next/router';
 
 const PokemonSearchContainer: React.FC = () => {
   // useState hook
@@ -8,7 +9,7 @@ const PokemonSearchContainer: React.FC = () => {
 
   // use Navigate router hook
   const router = useRouter();
-  
+
   return <div>index</div>;
 };
 
