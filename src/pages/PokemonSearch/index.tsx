@@ -10,6 +10,9 @@ const PokemonSearchContainer: React.FC = () => {
   // use Navigate router hook
   const router = useRouter();
 
+  // useAuth hook
+  const { isAuthenticated } = useAuth();
+
   return <div>index</div>;
 };
 
