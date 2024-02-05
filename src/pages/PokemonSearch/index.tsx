@@ -1,6 +1,7 @@
 import React,{ useState } from 'react'
 import { PokemonSearchData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
+import { useAuth } from '../../context/AuthContext';
 
 const PokemonSearchContainer: React.FC = () => {
   // useState hook
