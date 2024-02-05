@@ -2,6 +2,7 @@ import React,{ useState } from 'react'
 import { PokemonSearchData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../context/AuthContext';
+import { useFormik } from 'formik';
 
 const PokemonSearchContainer: React.FC = () => {
   // useState hook
