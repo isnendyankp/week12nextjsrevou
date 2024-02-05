@@ -14,6 +14,12 @@ const PokemonSearchContainer: React.FC = () => {
   // useAuth hook
   const { isAuthenticated } = useAuth();
 
+  // useFormik hook
+  const formik = useFormik({
+    initialValues: {
+      search: '',
+    },
+
   return <div>index</div>;
 };
 
