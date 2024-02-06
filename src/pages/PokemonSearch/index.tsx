@@ -39,7 +39,11 @@ const PokemonSearchContainer: React.FC = () => {
 
   //  searchPokemon function
   const searchPokemon = async () => {
-    
+    try {
+
+    } catch (error) {
+      console.log('error', error);
+    }
   };
 
   return <div>index</div>;
