@@ -27,7 +27,15 @@ const PokemonSearchContainer: React.FC = () => {
       search: yup.string().required('Search cannot be empty'),
     }),
 
-});
+    // onSubmit function for form submission
+    onSubmit: async (values) => {
+      if (isAuthenticated) {
+        setSearch(values.search);
+      } else {
+        router.push('/login');
+      }
+    },
+  });
 
   return <div>index</div>;
 };
