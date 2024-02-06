@@ -40,7 +40,10 @@ const PokemonSearchContainer: React.FC = () => {
   //  searchPokemon function
   const searchPokemon = async () => {
     try {
-
+      // fetch pokemon list from API
+      const response = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000`
+      );
     } catch (error) {
       console.log('error', error);
     }
