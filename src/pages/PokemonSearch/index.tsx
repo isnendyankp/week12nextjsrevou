@@ -45,6 +45,12 @@ const PokemonSearchContainer: React.FC = () => {
       const response = await axios.get(
         `https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000`
       );
+
+      // find pokemon from API response
+      const foundPokemon = response.data.results.find(
+        (poke: { name: string }) => poke.name.includes(search.toLowerCase())
+      );
+      
     } catch (error) {
       console.log('error', error);
     }
