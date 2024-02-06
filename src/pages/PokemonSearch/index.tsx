@@ -21,6 +21,13 @@ const PokemonSearchContainer: React.FC = () => {
       search: '',
     },
 
+    // validationSchema for form validation
+    validationSchema: yup.object({
+      search: yup.string().required('Search cannot be empty'),
+    }),
+    
+});
+
   return <div>index</div>;
 };
 
