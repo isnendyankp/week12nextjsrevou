@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { useAuth } from '../../context/AuthContext';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import axios from 'axios';
 
 const PokemonSearchContainer: React.FC = () => {
   // useState hook
