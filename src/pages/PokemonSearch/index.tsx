@@ -37,6 +37,11 @@ const PokemonSearchContainer: React.FC = () => {
     },
   });
 
+  //  searchPokemon function
+  const searchPokemon = async () => {
+    
+  };
+
   return <div>index</div>;
 };
 
