@@ -3,6 +3,7 @@ import { PokemonSearchData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../context/AuthContext';
 import { useFormik } from 'formik';
+import * as yup from 'yup';
 
 const PokemonSearchContainer: React.FC = () => {
   // useState hook
@@ -25,7 +26,7 @@ const PokemonSearchContainer: React.FC = () => {
     validationSchema: yup.object({
       search: yup.string().required('Search cannot be empty'),
     }),
-    
+
 });
 
   return <div>index</div>;
