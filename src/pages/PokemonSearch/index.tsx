@@ -62,11 +62,14 @@ const PokemonSearchContainer: React.FC = () => {
           types: pokemonResponse.data.types,
           abilities: pokemonResponse.data.abilities,
         });
+        // if pokemon not found, setPokemon state to null
       } else {
         setPokemon(null);
       }
+      // if error, log error to console and setPokemon state to null
     } catch (error) {
-      console.log('error', error);
+      console.error('Error: Pokemon not found');
+      setPokemon(null);
     }
   };
 
