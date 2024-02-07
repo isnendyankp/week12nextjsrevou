@@ -62,6 +62,9 @@ const PokemonSearchContainer: React.FC = () => {
           types: pokemonResponse.data.types,
           abilities: pokemonResponse.data.abilities,
         });
+      } else {
+        setPokemon(null);
+      }
     } catch (error) {
       console.log('error', error);
     }
