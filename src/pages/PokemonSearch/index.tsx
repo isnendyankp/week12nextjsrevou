@@ -50,7 +50,11 @@ const PokemonSearchContainer: React.FC = () => {
       const foundPokemon = response.data.results.find(
         (poke: { name: string }) => poke.name.includes(search.toLowerCase())
       );
-      
+      // if pokemon found, fetch pokemon details
+      if (foundPokemon) {
+        const pokemonResponse = await axios.get(
+          `https://pokeapi.co/api/v2/pokemon/${foundPokemon.name}`
+        );
     } catch (error) {
       console.log('error', error);
     }
