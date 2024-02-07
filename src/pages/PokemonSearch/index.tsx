@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ use, useState } from 'react'
 import { PokemonSearchData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../context/AuthContext';
@@ -72,6 +72,11 @@ const PokemonSearchContainer: React.FC = () => {
       setPokemon(null);
     }
   };
+
+  // useEffect hook
+  useEffect(() => {
+    
+  }, [search]);
 
   return <div>index</div>;
 };
