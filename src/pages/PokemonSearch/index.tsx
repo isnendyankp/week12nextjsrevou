@@ -1,4 +1,4 @@
-import React,{ use, useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import { PokemonSearchData } from '../../interfaces/Category';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../context/AuthContext';
