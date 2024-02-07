@@ -55,6 +55,13 @@ const PokemonSearchContainer: React.FC = () => {
         const pokemonResponse = await axios.get(
           `https://pokeapi.co/api/v2/pokemon/${foundPokemon.name}`
         );
+        // setPokemon state with pokemon data from API response
+        setPokemon({
+          name: pokemonResponse.data.name,
+          sprites: pokemonResponse.data.sprites,
+          types: pokemonResponse.data.types,
+          abilities: pokemonResponse.data.abilities,
+        });
     } catch (error) {
       console.log('error', error);
     }
