@@ -75,7 +75,11 @@ const PokemonSearchContainer: React.FC = () => {
 
   // useEffect hook
   useEffect(() => {
-    
+    if (search === '') {
+      setPokemon(null);
+    } else {
+      searchPokemon();
+    }
   }, [search]);
 
   return <div>index</div>;
