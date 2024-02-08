@@ -89,7 +89,18 @@ const PokemonSearchContainer: React.FC = () => {
       <h1 className="text-4xl mb-5">Pokemon Search</h1>
       {/* formik form */}
       <form className="w-full max-w-sm" onSubmit={formik.handleSubmit}>
-        
+        {/* Input Search */}
+        <Input
+          type="text"
+          onChange={formik.handleChange}
+          value={formik.values.search}
+          name="search"
+          placeholder="Search Pokemon"
+          className="appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+        />
+        {formik.errors.search ? (
+          <div className="text-red-600 mb-4">{formik.errors.search}</div>
+        ) : null}
       </form>
     </div>
   );
