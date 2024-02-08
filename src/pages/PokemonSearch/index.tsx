@@ -82,7 +82,12 @@ const PokemonSearchContainer: React.FC = () => {
     }
   }, [search]);
 
-  return <div>index</div>;
+  return (
+    // rebder formik form
+    <div className="flex flex-col items-center justify-center bg-gray-100 min-h-full py-4">
+      <div>index</div>;
+    </div>
+  );
 };
 
 export default PokemonSearchContainer;
