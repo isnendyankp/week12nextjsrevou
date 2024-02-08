@@ -101,6 +101,13 @@ const PokemonSearchContainer: React.FC = () => {
         {formik.errors.search ? (
           <div className="text-red-600 mb-4">{formik.errors.search}</div>
         ) : null}
+
+        {/* Button Search */}
+        <Button
+          type="submit"
+          label="Search"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full mt-4"
+        />
       </form>
     </div>
   );
