@@ -123,7 +123,8 @@ const PokemonSearchContainer: React.FC = () => {
 
           {/* detail */}
           <div className="px-6 py-4">
-            
+            {/* name */}
+            <div className="font-bold text-xl mb-2">{pokemon.name}</div>
           </div>
         </div>
       ) : (
