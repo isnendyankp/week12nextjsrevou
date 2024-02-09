@@ -120,6 +120,11 @@ const PokemonSearchContainer: React.FC = () => {
             src={pokemon.sprites.front_default}
             alt={pokemon.name}
           />
+
+          {/* detail */}
+          <div className="px-6 py-4">
+            
+          </div>
         </div>
       ) : (
 
