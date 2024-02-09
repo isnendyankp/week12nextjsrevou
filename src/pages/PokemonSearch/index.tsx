@@ -114,6 +114,12 @@ const PokemonSearchContainer: React.FC = () => {
       {/*if pokemon found, render pokemon card */}
       {pokemon ? ( 
         <div className="max-w-sm w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-8 p-4 bg-white rounded overflow-hidden shadow-lg relative">
+           {/* image */}
+          <img
+            className="w-full h-64 object-cover"
+            src={pokemon.sprites.front_default}
+            alt={pokemon.name}
+          />
       ) : (
 
       )}
