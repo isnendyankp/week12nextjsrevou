@@ -146,7 +146,7 @@ const PokemonSearchContainer: React.FC = () => {
       {/* Button back to list */}
       <Button
         label="Back to Pokemon List"
-       
+        onClick={() => router.push('/PokemonList')}
         className="mt-8 w-full max-w-sm sm:max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       />
     </div>
