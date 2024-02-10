@@ -1,6 +1,7 @@
-// Login page as a Home page
+// register page as a Home page
 
 import { useFormik } from 'formik';
+import { useRouter } from 'next/router';
 
 const Home = () => {
   // use router
