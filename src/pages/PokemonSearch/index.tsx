@@ -129,6 +129,11 @@ const PokemonSearchContainer: React.FC = () => {
             <p className="text-gray-700 text-base">
               Types: {pokemon.types.map((type) => type.type.name).join(', ')}
             </p>
+            {/* abilities */}
+            <p className="text-gray-700 text-base">
+              Abilities:{' '}
+              {pokemon.abilities.map((ability) => ability.ability.name).join(', ')}
+            </p>            
           </div>
         </div>
       ) : (
