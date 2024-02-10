@@ -3,6 +3,8 @@
 import { useFormik } from 'formik';
 
 const Home = () => {
+  // use router
+  const router = useRouter();
 
   // interface for email, name, and password
   interface FormProps {
