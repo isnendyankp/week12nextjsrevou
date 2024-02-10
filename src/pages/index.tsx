@@ -11,6 +11,7 @@ const Home = () => {
     password: string;
   }
 
+  // formik hook
   const formMik = useFormik<FormProps>({
     initialValues: {
       email: '',
@@ -18,6 +19,21 @@ const Home = () => {
       password: '',
     },
 
+    // submit function
+    onSubmit: async (values) => {
+      // fetch data from the API
+      await fetch('https://mock-api.arikmpt.com/api/user/register', {
+        method: 'POST',
+        // headers for the API request
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        // body for the API request
+        body: JSON.stringify(values),
+      });
+
+      router.push('/Login');
+    },
   });
   
   return (
