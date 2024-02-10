@@ -8,6 +8,15 @@ const Home = () => {
     name: string;
     password: string;
   }
+
+  const formMik = useFormik<FormProps>({
+    initialValues: {
+      email: '',
+      name: '',
+      password: '',
+    },
+
+  });
   
   return (
     <div>
