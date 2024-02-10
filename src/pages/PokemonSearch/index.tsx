@@ -5,7 +5,7 @@ import { useAuth } from '../../context/AuthContext';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
-import { Input } from '../../components';
+import { Input, Button } from '../../components';
 
 const PokemonSearchContainer: React.FC = () => {
   // useState hook
