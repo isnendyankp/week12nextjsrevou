@@ -1,23 +1,19 @@
-import { useContext } from 'react';
-import { AppContext } from '../providers/AppProvider';
+// Login page as a Home page
 
-export default function Home() {
+const Home = () => {
 
-  const context = useContext(AppContext);
+  // interface for email, name, and password
+  interface FormProps {
+    email: string;
+    name: string;
+    password: string;
+  }
+  
   return (
     <div>
       {' ini adalah halaman utama '}
-      {/* passin context user & name */}
-      {context.user?.name}
     </div>
-  )
-}
+  );
+};
 
-
-// Task:
-// 1. localhost:3000/auth -> ini adalah halaman auth
-// 2. localhost:3000/auth/forgot-password -> ini adalah halaman forgot password
-// 3. localhost:3000/auth/reset-password -> ini adalah halaman reset password
-// 4. localhost:3000/auth/token-authorization -> ini adalah halaman token authorization
-// 5. localhost:3000/auth/{token} -> ini adalah halaman token dengan {token}
-// 6. localhost:3000/auth/?sign={token}&email={email} -> ini adalah halaman sign {token} dan {email}
+export default Home;
