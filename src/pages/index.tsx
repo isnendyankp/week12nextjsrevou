@@ -1,5 +1,7 @@
 // Login page as a Home page
 
+import { useFormik } from 'formik';
+
 const Home = () => {
 
   // interface for email, name, and password
