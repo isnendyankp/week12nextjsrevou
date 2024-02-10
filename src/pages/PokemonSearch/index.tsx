@@ -142,6 +142,13 @@ const PokemonSearchContainer: React.FC = () => {
         // if pokemon not found, render message
         search !== '' && <p className="mt-8">No Pokemon found.</p>
       )}
+
+      {/* Button back to list */}
+      <Button
+        label="Back to Pokemon List"
+       
+        className="mt-8 w-full max-w-sm sm:max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      />
     </div>
   );
 };
