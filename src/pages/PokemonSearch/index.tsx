@@ -112,9 +112,9 @@ const PokemonSearchContainer: React.FC = () => {
 
       {/* Pokemon Card */}
       {/*if pokemon found, render pokemon card */}
-      {pokemon ? ( 
+      {pokemon ? (
         <div className="max-w-sm w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-8 p-4 bg-white rounded overflow-hidden shadow-lg relative">
-           {/* image */}
+          {/* image */}
           <img
             className="w-full h-64 object-cover"
             src={pokemon.sprites.front_default}
@@ -132,12 +132,15 @@ const PokemonSearchContainer: React.FC = () => {
             {/* abilities */}
             <p className="text-gray-700 text-base">
               Abilities:{' '}
-              {pokemon.abilities.map((ability) => ability.ability.name).join(', ')}
-            </p>            
+              {pokemon.abilities
+                .map((ability) => ability.ability.name)
+                .join(', ')}
+            </p>
           </div>
         </div>
       ) : (
-
+        // if pokemon not found, render message
+        search !== '' && <p className="mt-8">No Pokemon found.</p>
       )}
     </div>
   );
