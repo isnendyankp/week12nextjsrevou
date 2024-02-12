@@ -2,6 +2,8 @@
 
 import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
+import * as yup from 'yup';
+import { Card } from '../components';
 
 const Home = () => {
   // use router
@@ -55,7 +57,13 @@ const Home = () => {
   return (
     // add card
     <Card border={false} className="flex justify-center items-center">
-      <div>{' ini adalah halaman utama '}</div>
+      {/* card for wrap */}
+      <Card
+        border
+        className="p-6 rounded-lg border-emerald-500 shadow-lg w-1/2"
+      >
+        <div>{' ini adalah halaman utama '}</div>
+      </Card>
     </Card>
   );
 };
