@@ -64,9 +64,10 @@ const Home = () => {
       >
         {/* form component */}
         <form onSubmit={formMik.handleSubmit} className="space-y-4">
-
+          {/* Name */}
+          <Text className="block font-semibold text-emerald-700">Name</Text>
+          
         </form>
-        <div>{' ini adalah halaman utama '}</div>
       </Card>
     </Card>
   );
