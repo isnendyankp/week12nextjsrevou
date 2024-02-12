@@ -3,7 +3,7 @@
 import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
 import * as yup from 'yup';
-import { Text, Card } from '../components';
+import { Input, Text, Card } from '../components';
 
 const Home = () => {
   // use router
@@ -74,7 +74,7 @@ const Home = () => {
             value={formMik.values.name}
             onChange={formMik.handleChange('name')}
           />
-          {/* formik for name */}
+          {/* formik error for name */}
           {formMik.errors.name && (
             <Text className="text-red-500">{formMik.errors.name}</Text>
           )}
