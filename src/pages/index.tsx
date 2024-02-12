@@ -53,9 +53,10 @@ const Home = () => {
   });
   
   return (
-    <div>
-      {' ini adalah halaman utama '}
-    </div>
+    // add card
+    <Card border={false} className="flex justify-center items-center">
+      <div>{' ini adalah halaman utama '}</div>
+    </Card>
   );
 };
 
