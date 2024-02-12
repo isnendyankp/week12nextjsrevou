@@ -40,10 +40,15 @@ const Home = () => {
 
     // validation schema
     validationSchema: yup.object({
-      email: yup.string().email('Invalid email address').required('Required'),
-      name: yup.string().required('Required'),
-      password: yup.string().required('Required'),
-    
+      name: yup.string().required('Name tidak boleh kosong'),
+      email: yup
+        .string()
+        .email('Email harus valid')
+        .required('Email tidak boleh kosong'),
+      password: yup
+        .string()
+        .min(8, 'Password harus setidaknya berisi 8 karakter')
+        .required('Password tidak boleh kosong'),
     }),
   });
   
