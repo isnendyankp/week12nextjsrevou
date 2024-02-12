@@ -65,19 +65,21 @@ const Home = () => {
         {/* form component */}
         <form onSubmit={formMik.handleSubmit} className="space-y-4">
           {/* Name section */}
-          {/* text */}
-          <Text className="block font-semibold text-emerald-700">Name</Text>
-          {/* input */}
-          <Input
-            className="w-full px-3 py-2 border-emerald-700 border rounded-md"
-            name={'name'}
-            value={formMik.values.name}
-            onChange={formMik.handleChange('name')}
-          />
-          {/* formik error for name */}
-          {formMik.errors.name && (
-            <Text className="text-red-500">{formMik.errors.name}</Text>
-          )}
+          <div>
+            {/* text */}
+            <Text className="block font-semibold text-emerald-700">Name</Text>
+            {/* input */}
+            <Input
+              className="w-full px-3 py-2 border-emerald-700 border rounded-md"
+              name={'name'}
+              value={formMik.values.name}
+              onChange={formMik.handleChange('name')}
+            />
+            {/* formik error for name */}
+            {formMik.errors.name && (
+              <Text className="text-red-500">{formMik.errors.name}</Text>
+            )}
+          </div>
         </form>
       </Card>
     </Card>
