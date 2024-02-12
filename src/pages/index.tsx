@@ -62,6 +62,10 @@ const Home = () => {
         border
         className="p-6 rounded-lg border-emerald-500 shadow-lg w-1/2"
       >
+        {/* form component */}
+        <form onSubmit={formMik.handleSubmit} className="space-y-4">
+
+        </form>
         <div>{' ini adalah halaman utama '}</div>
       </Card>
     </Card>
