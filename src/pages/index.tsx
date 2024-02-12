@@ -74,6 +74,10 @@ const Home = () => {
             value={formMik.values.name}
             onChange={formMik.handleChange('name')}
           />
+          {/* formik for name */}
+          {formMik.errors.name && (
+            <Text className="text-red-500">{formMik.errors.name}</Text>
+          )}
         </form>
       </Card>
     </Card>
