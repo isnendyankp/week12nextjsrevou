@@ -3,7 +3,7 @@
 import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
 import * as yup from 'yup';
-import { Card } from '../components';
+import { Text, Card } from '../components';
 
 const Home = () => {
   // use router
